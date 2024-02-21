@@ -1,4 +1,7 @@
 {% extends "base.html" %}
 {% block body %}
-    <p>Hello</p>
+    <p>Instagram</p>
+    {% if current_user.is_authenticated %}
+        <p>Hello {{ current_user.username }}, Enjoy your stay :)</p>
+    {% endif }
 {% endblock %}
