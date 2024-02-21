@@ -1,0 +1,84 @@
+.main{
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.big-form{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
+.form-group{
+    padding-bottom: 0px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.sub-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    background-color: #117e8a;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: #117e8a;
+    width: 180px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator-text {
+    padding: 0 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+
+.Sign-in {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-top: 5%;
+}
+
+.Sign-in p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image{
+    position: absolute;
+    left:  30%;
+    top: 10%;
+    width: 30%;
+    height: 80%;
+}
