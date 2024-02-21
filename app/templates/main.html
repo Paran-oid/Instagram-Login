@@ -1,7 +1,21 @@
 {% extends "base.html" %}
 {% block body %}
-    <p>Instagram</p>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('index')}}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('register')}}">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+        </li>
+      </ul>
+    <h1>Instagram</h1>
     {% if current_user.is_authenticated %}
         <p>Hello {{ current_user.username }}, Enjoy your stay :)</p>
-    {% endif }
+    {% endif %}
 {% endblock %}

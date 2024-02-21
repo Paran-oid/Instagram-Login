@@ -1,13 +1,12 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
-from flask_login import UserMixin
 from app import db 
 import sqlalchemy as sa 
 from app.models import User 
 
 
-class Form(FlaskForm, UserMixin):
+class Form(FlaskForm):
     username=StringField("Username/Email:", render_kw={"placeholder":"Enter your username"} ,validators=[DataRequired()])
     password=PasswordField("Password:", render_kw={"placeholder":"Enter your pasword"}, validators=[DataRequired()])
     remember_me=BooleanField("Remember me")
